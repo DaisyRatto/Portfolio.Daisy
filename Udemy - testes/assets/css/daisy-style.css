@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+::selection {
+    background-color: #faaeba;
+    color: #ffffff;
+}
+.area_navegacao {
+    background-color: #c95064;
+    max-width: 1200px;
+    float: left;
+}
+.menu-principal{
+    float: left;
+}
+.meu-logo {
+    color: #9dd89d;
+}
+.link ul li{
+    float: left;
+}
+.link ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.pesquisa-barra {
+    float: left;
+}
+
+input:checked + p {
+    background-color: lightgreen;
+}
+input:not(:checked) + p {
+    background-color: lightcoral;
+}
+.texto_daisy{
+    margin: 0 auto;
+    padding: 0px 202px;
+    font-weight: bold;
+    text-align: center;
+}
+.pagina2 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
