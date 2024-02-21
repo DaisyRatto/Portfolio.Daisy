@@ -173,18 +173,22 @@ table tfoot, table th {
     gap: var(--gap);
 }
 
+#b-text {
+    padding-top: 150px;
+}
+
 .intro-text-content, .intro-img-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     background-size: auto;
+    min-height: 100vh;
 }
-
 
 .intro-img-content img {
     max-width: 100%;
     height: auto;
-
+    padding-bottom: 180px;
 }
 
 .sobre-mim {
@@ -338,6 +342,26 @@ footer .foot-page {
     font-size: 14px;
 }
 
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--white-color);
+    color: var(--secundary-color);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    border: 0.1rem solid var(--primary-color);
+}
+
 @media (max-width: 800px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
@@ -356,6 +380,7 @@ footer .foot-page {
     .menu {
         bottom: 0;
         text-align: center;
+        display: none;
     }
 
     .menu-content, .menu-content ul {
@@ -365,10 +390,6 @@ footer .foot-page {
 
     .menu-content {
         height: 100vh;
-    }
-
-    .menu {
-        display: none;
     }
 
     .close-menu {
@@ -393,4 +414,14 @@ footer .foot-page {
         padding: 1rem;
         cursor: pointer;
     }
+    /* × */
+    .close-menu:checked~.menu {
+        display: block;
+    }
+    
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+        font-size: 2.6rem;
+    }
+
 }

@@ -19,12 +19,12 @@
 
     <aside class="menu">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#menu">Daisy Ratto</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#sobre-mim">sobre mim</a></li>
                     <li><a href="#grid">grids</a></li>
                     <li><a href="#projetos">projetos</a></li>
@@ -35,11 +35,9 @@
         </div>
     </aside>
 
-    <div class="menu-spacing"></div>
-
     <section id="menu" class="intro main-bg section">
         <div class="main-content intro-content">
-            <div class="intro-text-contet">
+            <div id="b-text" class="intro-text-contet">
                 <h2>Daisy Borges Dias Ratto</h2>
                 <p>Olá, pessoal! Este é o meu portfólio, espero que 
                     supra as suas expectativas
@@ -268,5 +266,7 @@
             </a></p>
         </div>
     </footer>
+
+    <a href="#" class="back-to-top">➤<a>
 </body>
 </html>
